@@ -1,0 +1,11 @@
+.docs-wrapper {
+    width: 100%;
+    height: calc(100vh - 64px);
+}
+.docs-menu {
+    width: 300px;
+    padding: 10px;
+}
+.docs-page {
+
+}

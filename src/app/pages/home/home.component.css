@@ -1,0 +1,9 @@
+.section-wrapper {
+    padding: 20px;
+    max-width: 980px;
+    margin: auto auto;
+}
+
+.section-gray {
+    background-color: #eeeeee;
+}
