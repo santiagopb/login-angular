@@ -1,0 +1,17 @@
+<mat-sidenav-container class="docs-wrapper">
+    <mat-sidenav #sidenav mode="side" class="docs-menu" [(opened)]="opened">
+      <mat-toolbar>
+        <span>My Application</span>
+        <span class="fill-space"></span>
+        <span class="login">
+          <mat-icon class="close" (click)="sidenav.toggle()">close</mat-icon>
+        </span>
+      </mat-toolbar>
+      <div></div>
+      <img class="logo" src="./assets/sidenav-left.jpg">
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-icon class="dehaze" *ngIf="!opened" (click)="sidenav.toggle()">dehaze</mat-icon>
+      <app-home></app-home>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
