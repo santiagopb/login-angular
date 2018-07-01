@@ -1,0 +1,12 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    .logo {
+      width: 150px;
+      align-self: center;
+    }
+    .input-full-width {
+      width: 100%;
+    }
+  }
+  

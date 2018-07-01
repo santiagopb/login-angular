@@ -9,9 +9,12 @@
       </mat-toolbar>
       <div></div>
       <img class="logo" src="./assets/sidenav-left.jpg">
+
+      <app-login></app-login>
+      
     </mat-sidenav>
     <mat-sidenav-content>
-      <mat-icon class="dehaze" *ngIf="!opened" (click)="sidenav.toggle()">dehaze</mat-icon>
-      <app-home></app-home>
+      <mat-icon class="dehaze" *ngIf="!opened" (click)="openSidenav()">dehaze</mat-icon>
+      <app-home [menu]="opened"></app-home>
     </mat-sidenav-content>
   </mat-sidenav-container>

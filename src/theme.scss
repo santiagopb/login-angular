@@ -6,10 +6,44 @@
 // Be sure that you only ever include this mixin once!
 @include mat-core();
 
+// My personal palet
+$my-blue: (
+  50: #7fdddd,
+  100: #283e4a,
+  200: #7f7fdd,
+  300: #283e4a,
+  400: #283e4a,
+  500: #283e4a,
+  600: #283e4a,
+  700: #283e4a,
+  800: #283e4a,
+  900: #283e4a,
+  A100: #283e4a,
+  A200: #283e4a,
+  A400: #283e4a,
+  A700: #283e4a,
+  contrast: (
+    50: white,
+    100: white,
+    200: white,
+    300: white,
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: white,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
+
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$app-primary: mat-palette($mat-blue-gray, 900);
+$app-primary: /*#283e4a;*/ mat-palette($my-blue, 900);
 $app-accent:  mat-palette($mat-deep-purple, 50, A100, A400);
 
 // The warn palette is optional (defaults to red).
